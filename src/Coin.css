@@ -1,0 +1,124 @@
+.coin-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border-bottom: 1px solid #d7d7d7; */
+  background: rgb(44, 51, 66);
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin: 3px 10px;
+}
+
+@media screen and (max-width:840px){
+    .coin-row{
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .coin-row .coin {
+      margin-bottom: 1em;
+      padding-top: 5px;
+      justify-content: start;
+      width: 100%;
+      padding-right: 0px;
+    }
+
+    .coin-row .coin-symbol {
+      position: absolute;
+      right: 0;
+    }
+    .coin-data{
+      border: none;
+      border-top: 1px solid #f2f2f21e;
+      padding-top: 10px;
+    }
+    .coin-row .coin-price {
+      width: 70px;
+      text-align: start;
+    }
+    .coin-marketcap {
+      display: none;
+    }
+    /* .coin-data{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    } */
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  background: transparent;
+  width: 400px;
+  position: relative;
+}
+
+.coin h1 {
+  font-size: 16px;
+  width: 150px;
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  background: transparent;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.coin-data {
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.coin-price {
+  width: 100px;
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.coin-volume {
+  width: 140px;
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.coin-marketcap {
+  width: 210px;
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.coin-percent {
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.red {
+  color: #f00606;
+}
+
+.green {
+  color: #11d811;
+}
